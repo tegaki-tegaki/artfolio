@@ -1,0 +1,9 @@
+export NEWDRAWS_PG_PASSWORD:=YOURPASSWORDHERE
+
+.PHONY: all
+all :
+	python3.6 drawwatcher.py
+
+.PHONY: i
+i :
+	python3.6 -i drawwatcher.py

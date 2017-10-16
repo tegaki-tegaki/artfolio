@@ -1,0 +1,5 @@
+flyway.url=jdbc:postgresql://localhost/newdraws
+flyway.schemas=public
+flyway.user=newdraws
+flyway.password=PASSWORDGOESHERE
+flyway.locations=filesystem:.

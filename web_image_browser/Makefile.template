@@ -1,0 +1,15 @@
+export NEWDRAWS_PG_PASSWORD:=YOURPASSWORDHERE
+
+.PHONY: all
+all : sass
+	python3.6 web_image_browser.py
+
+.PHONY: i
+i : sass
+	python3.6 -i web_image_browser.py
+
+.PHONY: sass
+sass : static/css/style.css
+
+%.css : %.scss
+	sass $< $@

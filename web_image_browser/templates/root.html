@@ -1,0 +1,22 @@
+<html>
+  <head>
+     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+  <body>
+    <h1>DRAWS xD</h1>
+    <ul id=draws>
+      {% for image in images %}
+      <li><a href='{{ image.orig }}'><img src='{{ image.thumbnail }}'></img></a></li>
+      {% endfor %}
+    </ul>
+    <h2>Powered by:</h2>
+    <ul id=powered-by>
+      <li><a href="https://github.com/channelcat/sanic"><img src="static/images/sanic.png"/></a></li>
+      <li><a href="https://python.org"><img src="static/images/python.png"/></a></li>
+      <li><a href="https://github.com/psycopg/psycopg2"><img src="static/images/psycopg.png"/></a></li>
+      <li><a href="https://nginx.com"><img src="static/images/nginx.svg"/></a></li>
+      <li><a href="https://github.com/pallets/jinja"><img src="static/images/jinja.png"/></a></li>
+      <li><a href="https://github.com/sass/sass"><img src="static/images/sass.svg"/></a></li>
+    </ul>
+    <body>
+</html>
