@@ -5,7 +5,7 @@
 # programs
 
 ## drawwatcher
-checks for new images on filesystem, thumbnails them, and insert them into db
+checks for new images on filesystem, wipes EXIF metadata, thumbnails them, and insert them into db
 
 ## web_image_browser
-hosts a website that hosts a listing of image thumbnails with links to the original image.
+hosts a website that hosts a listing of image thumbnails with links to the original image (after being processed by drawwatcher).
