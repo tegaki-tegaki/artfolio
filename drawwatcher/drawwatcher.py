@@ -81,6 +81,13 @@ def _main():
                             continue
 
                         #
+                        # wipe EXIF data
+                        subprocess.run(["exiftool",
+                                        "-all=",
+                                        "-overwrite_original",
+                                        infile])
+
+                        #
                         # run thumbnailer imagemagick command on file
                         outfile = _thumbnail_outfile(infile)
                         print(f'THUMBNAIL: {infile} ...', end='')
