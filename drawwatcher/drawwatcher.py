@@ -81,7 +81,13 @@ def _main():
                             continue
 
                         #
-                        # wipe EXIF data
+                        # autorotate (uses metadata)... only works for jpg
+                        subprocess.run(["jhead",
+                                        "-autorot",
+                                        infile])
+
+                        #
+                        # wipe metadata
                         subprocess.run(["exiftool",
                                         "-all=",
                                         "-overwrite_original",
