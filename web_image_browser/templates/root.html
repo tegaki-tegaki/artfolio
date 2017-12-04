@@ -4,6 +4,9 @@
   </head>
   <body>
     <h1>DRAWS xD</h1>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
     <ul id=draws>
       {% for image in images %}
       <li><a href='{{ image.orig }}'><img src='{{ image.thumbnail }}'></img></a></li>
@@ -18,8 +21,5 @@
       <li><a href="https://github.com/pallets/jinja"><img src="static/images/jinja.png"/></a></li>
       <li><a href="https://github.com/sass/sass"><img src="static/images/sass.svg"/></a></li>
     </ul>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
     <body>
 </html>
